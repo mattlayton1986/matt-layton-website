@@ -1,44 +1,80 @@
 import React from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
+import { useTheme } from "@mui/styles";
+import PageContainer from "../../containers/page.container";
+import TextContainer from "../../containers/text.container";
+import Avatar from "../../components/Avatar/avatar.component";
+import AnimatedTypography from "../../components/AnimatedTypography/animated-typography.component";
 import Link from "@mui/material/Link";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
-import {
-  homeContainerStyles,
-  imageContainerStyles,
-  heroTextContainerStyles,
-  aboutMeStyles,
-  StyledImage,
-} from "./Home.styled";
-import headshot from "../../assets/avatar.png";
 
-const Home = () => (
-  <Container maxWidth="xl" sx={homeContainerStyles}>
-    <Container id="headshot" maxWidth="false" sx={imageContainerStyles}>
-      <StyledImage src={headshot} alt="Avatar of Matt Layton" />
-    </Container>
+const Home = () => {
+  const theme = useTheme();
+  const { easing } = theme.transitions;
 
-    <Container id="hero-text" maxWidth="false" sx={heroTextContainerStyles}>
-      <Typography variant="h1">Matthew Layton</Typography>
-      <Typography variant="h4" component="h2">
-        Front End Developer | Trainer | Mentor
-      </Typography>
-      <Typography variant="h6" sx={aboutMeStyles}>
-        I'm a software engineer based in Chicago. I specialize in building
-        beautiful, scalable front-end applications with JavaScript, React, and
-        other Web technologies. I currently build global e-commerce experiences
-        at{" "}
-        <Link
-          href="https://www.cleverbridge.com"
-          target="_blank"
-          rel="noopener"
+  return (
+    <PageContainer maxWidth="xl" justify="space-around" align="center">
+      <Avatar size="300" />
+      <TextContainer
+        id="hero-text"
+        maxWidth="false"
+        textalign="left"
+        width="65%"
+        padding={theme.spacing(20, 4)}
+      >
+        <AnimatedTypography
+          slide={{
+            direction: "down",
+            easing: easing.easeOut,
+            timeout: 600,
+            appear: true,
+            in: true,
+          }}
+          typography={{ variant: "h1" }}
+          textalign="center"
         >
-          cleverbridge <OpenInNewIcon fontSize="small" />
-        </Link>
-        .
-      </Typography>
-    </Container>
-  </Container>
-);
+          Matthew Layton
+        </AnimatedTypography>
+
+        <AnimatedTypography
+          slide={{
+            direction: "left",
+            easing: easing.easeInOut,
+            timeout: 800,
+            appear: true,
+            in: true,
+          }}
+          typography={{ variant: "h4", component: "h2" }}
+          textalign="center"
+        >
+          Front End Developer | Trainer | Mentor
+        </AnimatedTypography>
+
+        <AnimatedTypography
+          slide={{
+            direction: "up",
+            easing: easing.easeOut,
+            timeout: 600,
+            appear: true,
+            in: true,
+          }}
+          typography={{ variant: "h6", sx: { mt: 4 } }}
+        >
+          I'm a software engineer based in Chicago. I specialize in building
+          beautiful, scalable front-end applications with JavaScript, React, and
+          other Web technologies. I currently build global e-commerce
+          experiences at{" "}
+          <Link
+            href="https://www.cleverbridge.com"
+            target="_blank"
+            rel="noopener"
+          >
+            cleverbridge <OpenInNewIcon fontSize="small" />
+          </Link>
+          .
+        </AnimatedTypography>
+      </TextContainer>
+    </PageContainer>
+  );
+};
 
 export default Home;

@@ -9,8 +9,6 @@ import reportWebVitals from "./reportWebVitals";
 
 import "./index.css";
 
-console.log(theme);
-
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
