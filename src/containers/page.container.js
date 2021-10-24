@@ -3,13 +3,14 @@ import Container from "@mui/material/Container";
 import styled from "@emotion/styled";
 
 const StyledPageContainer = styled(Container)(
-  ({ theme, direction, justify, align }) => ({
+  ({ theme, direction, justify, align, bg }) => ({
     width: "100vw",
-    height: "100vh",
+    minHeight: "100vh",
     display: "flex",
     flexDirection: direction?.xl || "row",
     justifyContent: justify?.xl || "center",
     alignItems: align?.xl || "center",
+    backgroundColor: bg || "#fff",
 
     [theme.breakpoints.down("md")]: {
       flexDirection: direction?.md || "column",
@@ -27,15 +28,18 @@ export default PageContainer;
 
 /**
  * Props
- * flexDirection: { md: String, xl: String},
+ * direction: { md: String, xl: String},
  *                default: md: "column", xl: "row",
  *                sets flex direction of page container
  * 
- * justifyContent: { md: String, xl: String },
+ * justify: { md: String, xl: String },
  *                 default: "center"
  *                 justifies content along main axis
  * 
- * alignItems: { md: String, xl: String },
+ * align: { md: String, xl: String },
  *             default: "center"
  *             aligns content along cross axis
+ * bg: String,
+ *      default: "#fff",
+ *      sets page background color
  */

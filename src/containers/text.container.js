@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 const StyledTextContainer = styled(Container)(
   ({
     theme,
-    flexDirection,
+    direction,
     justify,
     align,
     overflow,
@@ -14,16 +14,16 @@ const StyledTextContainer = styled(Container)(
     margin,
   }) => ({
     display: "flex",
-    flexDirection: flexDirection?.xl || "column",
+    flexDirection: direction?.xl || "column",
     justifyContent: justify?.xl || "center",
     alignItems: align?.xl || "center",
     overflow: overflow || "hidden",
     width: width?.xl || "100%",
-    padding: padding?.xl || theme.spacing(4),
-    margin: margin?.xl || theme.spacing(4),
+    padding: padding?.xl || theme.spacing(1),
+    margin: margin?.xl || theme.spacing(1),
 
     [theme.breakpoints.down("md")]: {
-      flexDirection: flexDirection?.md || "column",
+      flexDirection: direction?.md || "column",
       justifyContent: justify?.md || "center",
       alignItems: align?.md || "center",
       overflow: overflow || "hidden",
@@ -42,13 +42,13 @@ export default TextContainer;
 
 /**
  * Props
- * flexDirection: { xl: String, md: String },
+ * direction: { xl: String, md: String },
  *                default: "column",
  *                sets flex direction of text container
- * justifyContent: { xl: String, md: String },
+ * justify: { xl: String, md: String },
  *                 default: "center"
  *                 justifies content along main axis
- * alignItems: { xl: String, md: String },
+ * align: { xl: String, md: String },
  *             default: "center",
  *             aligns content along cross axis
  * overflow: { xl: String, md: String },

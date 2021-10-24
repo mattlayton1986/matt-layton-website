@@ -3,6 +3,7 @@ import Home from "../pages/Home/Home.page";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 
 // Résumé
+import Resume from "../pages/Resume/Resume.page";
 import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlined";
 
 // Portfolio
@@ -29,7 +30,7 @@ const links = {
       name: "Résumé",
       route: "/resume",
       icon: QuestionAnswerOutlinedIcon,
-      // page: Resume,
+      page: Resume,
     },
     {
       name: "Portfolio",
@@ -56,6 +57,18 @@ const links = {
       username: "@mattlayton1986",
       icon: LinkedInIcon,
       url: "https://www.linkedin.com/in/mattlayton1986/",
+    },
+  ],
+  documents: [
+    {
+      name: "Matthew_Layton_Resume.docx",
+      filepath: "/documents/matthew_layton_resume.docx",
+      type: "Word Document",
+    },
+    {
+      name: "Matthew_Layton_Resume.pdf",
+      filepath: "/documents/matthew_layton_resume.pdf",
+      type: "PDF Document",
     },
   ],
 };
