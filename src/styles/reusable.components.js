@@ -6,6 +6,8 @@ import styled from "@emotion/styled";
 const verticalAlignment = {
   display: "flex",
   flexDirection: "column",
+  width: "100%",
+  alignItems: "flex-start",
 };
 
 export const StyledList = styled(List)(({ theme }) => ({
