@@ -16,6 +16,7 @@ const StyledPageContainer = styled(Container)(
       flexDirection: direction?.md || "column",
       justifyContent: justify?.md || "center",
       alignItems: align?.md || "center",
+      padding: theme.spacing(6, 0),
     },
   })
 );

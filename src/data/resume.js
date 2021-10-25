@@ -9,7 +9,7 @@ const resume = {
       responsibilities: [
         "Handled development requests and bug fixes for clients’ checkouts utilizing a Kanban-based Jira workflow.",
         "Contributed to a global rebrand of the corporate website.",
-        "Led development of front-end ecommerce properties for an enterprise client onboarding with potential for $200+ million revenue.",
+        "Led development of front-end e-commerce properties for an enterprise client onboarding with potential for $200+ million revenue.",
         "Collaborated on team coding standards, including development of a Gatsby-based documentation tool, legacy code cleanup, and feature standardization.",
         "Trained developer new-hires, including education on platform features, code structure, workflows, and code-pairing and code review activities.",
       ],
@@ -19,16 +19,16 @@ const resume = {
       jobTitle: "Sales Front End Developer",
       company: "cleverbridge, Inc.",
       responsibilities: [
-        "Created prospect-branded ecommerce experiences used by the Sales team for attracting potential clients (role overlapped with SDR position).",
+        "Created prospect-branded e-commerce experiences used by the Sales team for attracting potential clients (role overlapped with SDR position).",
       ],
     },
     {
       dates: "June 2018 to December 2019",
-      jobTitle: "Sales Development Respresentative",
+      jobTitle: "Sales Development Representative",
       company: "cleverbridge, Inc.",
       responsibilities: [
         "Qualified inbound sales leads for North & South American and Israel markets.",
-        "Promoted cleverbridge ecommerce solutions with outbound activities such as cold calling, emailing, and LinkedIn InMail contacts",
+        "Promoted cleverbridge e-commerce solutions with outbound activities such as cold calling, emailing, and LinkedIn InMail contacts",
         "Researched and evaluated potential prospects via web research.",
         "Scheduled initial prospect meetings with Sales team members for qualified leads.",
       ],
@@ -82,7 +82,6 @@ const resume = {
       category: "General Understanding",
       skills: [
         "Accessibility",
-        "GraphQL",
         "GraphQL",
         "Unit Testing (Jest/Mocha/Chai/Jasmine)",
         "TypeScript",

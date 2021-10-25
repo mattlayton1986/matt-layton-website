@@ -8,13 +8,14 @@ const verticalAlignment = {
   flexDirection: "column",
 };
 
-export const StyledList = styled(List)`
-  ${verticalAlignment}
-`;
+export const StyledList = styled(List)(({ theme }) => ({
+  ...verticalAlignment,
+}));
 
-export const StyledListItem = styled(ListItem)`
-  ${verticalAlignment}
-`;
+export const StyledListItem = styled(ListItem)(({ theme }) => ({
+  ...verticalAlignment,
+
+}))
 
 export const StyledHighlight = styled(Typography)(({ theme }) => ({
   color: theme.palette.success.main,
