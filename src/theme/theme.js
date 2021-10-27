@@ -5,6 +5,9 @@ const theme = createTheme({
     h1: {
       fontFamily: "Coda",
     },
+    h2: {
+      fontFamily: "Coda",
+    },
   },
 });
 

@@ -19,6 +19,7 @@ const Home = () => {
   const h1TextProps = {
     variant: matches ? "h4" : "h1",
     align: "center",
+    component: "h1",
   };
 
   const h2TextProps = {
@@ -29,6 +30,7 @@ const Home = () => {
 
   const contentTextProps = {
     variant: matches ? "body2" : "h6",
+    component: "h3",
     align: "center",
     sx: { mt: 4 },
   };

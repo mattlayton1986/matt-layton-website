@@ -10,6 +10,7 @@ import QuestionAnswerOutlinedIcon from "@mui/icons-material/QuestionAnswerOutlin
 import WebOutlinedIcon from "@mui/icons-material/WebOutlined";
 
 // Contact
+import Contact from "../pages/Contact/Contact.page";
 import SendIcon from "@mui/icons-material/Send";
 
 // Github
@@ -42,7 +43,7 @@ const links = {
       name: "Contact",
       route: "/contact",
       icon: SendIcon,
-      // page: Contact
+      page: Contact,
     },
   ],
   socialNav: [
