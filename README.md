@@ -15,13 +15,13 @@ Feel free to clone this repo down if you'd like to run the project locally and s
 1. Clone the project
 
 ```bash
-git clone https://github.com/mattlayton1986/gratitude.git 
+git clone https://github.com/mattlayton1986/matt-layton-website.git
 ```
 
 2. Install dependencies
 
 ```bash
-cd gratitude && npm install
+cd matt-layton-website && npm install
 ```
 
 3. Launch app
